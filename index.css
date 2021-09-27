@@ -1,13 +1,13 @@
-div{
-    width: 100px;
-    margin: 50 px;
-	animation-name: rotation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-h1{
+a{
     text-decoration: none;
+    font-size: 30px;
+    color: #000 !important;
+
 }
 @keyframes rotation {
     0% {
@@ -17,3 +17,35 @@ h1{
         transform:rotate(360deg);
     }
 }
+
+li {
+    display: inline-block;
+    margin: 40px;
+    list-style-type: none;
+}
+header{
+    text-align: center;
+    background-color: grey;
+    height: 10%;
+    flex: 2 0 auto;
+}
+main{
+  height: 700px;
+   flex: 1 0 auto;
+}
+footer{
+     background-color: grey;
+    height: 10%;
+    width: 100%;
+   flex: 0 0 auto;
+   text-align: center;
+}
+.img{
+    align-self: center;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://www.leomebel.ru/upload/iblock/65c/65cdcaad09bb803d9c63d89131141656.jpg');
+    background-size: cover;
+    border: solid;
+}
+
